@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=parseFloat(prompt("Nhập số tiền gốc"))
+    let month=parseInt(prompt("Nhập số tháng gửi"))
+    let percent=parseFloat(prompt("Nhập lãi xuất"))
+    let tienlai = 0
+    for (let i=0;i<month;i++){
+        tienlai=tienlai+number*(percent/100)
+    }
+    alert("tiền lãi "+percent+"% sau "+month+" tháng là:"+tienlai)
+
+</script>
+</body>
+</html>
